@@ -11,7 +11,7 @@ jobs: # a collection of steps
       - checkout
 
       - run:
-          name: install-npm-wee
-          command: npm install
+          name: install maven
+          command: mvn clean compile
       
       - run: bash <(curl -s https://scripts.scantist.com/staging/ci-circle-jar.sh)
